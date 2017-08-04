@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+}
+
+.optionalInformations{
+    display: flex;
+    flex-direction: row;
+}
+
+.subInformations header span{
+    font-size: 250%;
+}
+
+.subInformations input[type='range']{
+    width: 75%
+}
+
+.subInformations img{
+    width: 32px;
+    height: 32px;
+}
+
+.moreButton{
+
+}
