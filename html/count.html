@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Count</title>
+</head>
+<body>
+    <nav>Nom du carrefour</nav>
+
+    <section>
+        <article class="bicycleCount">
+            <h1> <span id="velovCount">0</span> Velov(s)</h1>
+            <span id="velovUpdateNumber">1</span>
+            <input id="velovSlider" type="range" value="1" min="1" max="10"/>
+            <div class="updateButtons">
+                <button class="moreButton" id="velovMore">+</button>
+                <button class="lessButton" id="velovLess">-</button>
+            </div>
+        </article>
+        <div class="optionalInformations">
+            <article class="subInformations" id="redlights">
+                <p><span id="redlightCount">0</span>
+                    <img src="../static/images/miniredlight.png" alt="redlight icone"/></p>
+                <h1>Feux rouges grillés</h1>
+                <span id="redlightUpdateNumber">1</span>
+            <input id="redlightSlider" type="range" value="1" min="1" max="10"/>
+            <div class="updateButtons">
+                <button class="moreButton" id="redlightMore">+</button>
+                <button class="lessButton" id="redlightLess">-</button>
+            </div>
+            </article>
+            <article class="subInformations" id="pavement">
+                <p><img src="../static/images/minipavement.png" alt="pavement icone"/>
+                    <span id="pavementCount">0</span></p>
+                <h1>Passages sur trottoirs</h1>
+                <span id="pavementUpdateNumber">1</span>
+            <input id="pavementSlider" type="range" value="1" min="1" max="10"/>
+            <div class="updateButtons">
+                <button class="moreButton" id="pavementMore">+</button>
+                <button class="lessButton" id="pavementLess">-</button>
+            </div>
+            </article>
+        </div>
+        <article class="bicycleCount">
+            <h1> <span id="otherBikeCount">0</span> Autre(s) vélo(s)</h1>
+            <span id="otherBikeUpdateNumber">1</span>
+            <input id="otherBikeSlider" type="range" value="1" min="1" max="10"/>
+            <div class="updateButtons">
+                <button class="moreButton" id="otherBikeMore">+</button>
+                <button class="lessButton" id="otherBikeLess">-</button>
+            </div>
+        </article>
+    </section>
+    <script src="../js/count.js"></script>
+</body>
+</html>
