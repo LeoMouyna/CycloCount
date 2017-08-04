@@ -4,19 +4,60 @@ body{
     text-align: center;
 }
 
+.headBanner{
+    background: url("../images/carrefour.jpg");
+	height: 100px;
+	max-width: 344px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+    align-items: flex-end;
+}
+
+.headBanner p{
+    padding: 5px;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    flex: 1;
+}
+
 section{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 article{
-    padding: 10px;
-    margin: 10px;
+    padding: 10px, 0px, 10px, 0px;
+    margin: 10px, 0px, 10px, 0px;
 }
 
+article h1{
+    font-size: 175%;
+    margin: 8px 0px 4px 0px;
+}
+
+.numberAndSlider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sliderNumber{
+    font-size: 125%;
+}
+
+/*Mise en forme des informations optionelles*/
 .optionalInformations{
     display: flex;
     flex-direction: row;
+}
+
+.optionalInformations h1{
+    font-size: 90%;
 }
 
 .subInformations header span{
@@ -32,6 +73,88 @@ article{
     height: 32px;
 }
 
-.moreButton{
+/*Mise en forme des boutons*/
+.moreButton {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
+.moreButton:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #419641;
+}
+
+.moreButton:focus, .moreButton.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+          box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+}
+
+.lessButton {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.lessButton:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #c12e2a;
+}
+
+.lessButton:focus, .lessButton.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+          box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+}
+
+#sendInformations{
+    display: None;
+    position : absolute;
+    right: 10%;
+    bottom: 30px;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+
+#sendInformations:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+#sendInformations:focus, #sendInformations.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
 }
